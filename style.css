@@ -1,0 +1,157 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+}
+
+header {
+    background-color: green; 
+    color: white;
+    text-align: center;
+    padding: 2px 0;
+    width: 100%;
+    margin: 0; 
+}
+
+nav {
+    background-color: black;
+    width: 100%;
+    margin-top: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display:inline-block;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: inline-block;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    background-color: whitesmoke;
+    color: black;
+}
+main {
+    display: flex;
+    margin: 20px;
+}
+aside {
+    width: 25%;
+    background-color: lightgray;
+    padding: 20px;
+    float: left;
+    height: 25%;
+}
+aside h1 {
+    background-color: black;
+    color: white;
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+aside ul {
+    list-style-type: none;
+}
+
+aside ul li {
+    margin: 10px 0;
+}
+
+aside ul li a {
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+aside ul li a:hover {
+    color: blueviolet;
+}
+
+section.gallery {
+    width: 75%;
+    padding-left: 30px;
+    overflow: hidden;
+}
+
+.gallery-item {
+    width: 30%;
+    height: 400px;
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    margin: 0 10px 20px 0;
+    float: left; 
+}
+
+.gallery-item img {
+    width: 100%; 
+    height: auto; 
+    margin-bottom: 10px;
+    border-radius: 15px;
+    border: 5px solid transparent;
+}
+
+.gallery-item img:hover {
+    border: 5px solid green; /* Change the border color on hover */
+}
+
+.gallery-item h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.gallery-item p {
+    font-size: 14px;
+    color: black;
+}
+
+.gallery-item:nth-child(3n) {
+    margin-right: 0; 
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+footer {
+    background-color: darkgrey;
+    color: white;
+    text-align: left;
+    padding: 15px;
+}
+.back-btn {
+    display: inline-block;
+    width: 200px; 
+    padding: 15px; 
+    background-color: red; 
+    color: white; 
+    text-align: center; 
+    border-radius: 5px; 
+    border: none;
+    font-size: 18px; 
+    margin: 20px auto;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.back-btn:hover {
+    background-color: magenta;
+}
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
